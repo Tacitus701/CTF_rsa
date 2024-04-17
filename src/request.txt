@@ -1,0 +1,119 @@
+Frame 27: 146 bytes on wire (1168 bits), 146 bytes captured (1168 bits) on interface wlp0s20f3, id 0
+    Section number: 1
+    Interface id: 0 (wlp0s20f3)
+        Interface name: wlp0s20f3
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Apr 18, 2024 00:01:43.048770787 CEST
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1713391303.048770787 seconds
+    [Time delta from previous captured frame: 0.000431177 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 4.191089773 seconds]
+    Frame Number: 27
+    Frame Length: 146 bytes (1168 bits)
+    Capture Length: 146 bytes (1168 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ipv6:tcp:http:data]
+    [Coloring Rule Name: HTTP]
+    [Coloring Rule String: http || tcp.port == 80 || http2]
+Ethernet II, Src: 8c:1d:96:7b:82:1b (8c:1d:96:7b:82:1b), Dst: 6c:ba:b8:af:e6:a0 (6c:ba:b8:af:e6:a0)
+    Destination: 6c:ba:b8:af:e6:a0 (6c:ba:b8:af:e6:a0)
+        Address: 6c:ba:b8:af:e6:a0 (6c:ba:b8:af:e6:a0)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: 8c:1d:96:7b:82:1b (8c:1d:96:7b:82:1b)
+        Address: 8c:1d:96:7b:82:1b (8c:1d:96:7b:82:1b)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv6 (0x86dd)
+Internet Protocol Version 6, Src: 2a01:cb08:ab9:7f00:89b0:9b61:dd7d:9357, Dst: 2a00:1450:4007:818::200e
+    0110 .... = Version: 6
+    .... 0000 0000 .... .... .... .... .... = Traffic Class: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        .... 0000 00.. .... .... .... .... .... = Differentiated Services Codepoint: Default (0)
+        .... .... ..00 .... .... .... .... .... = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    .... 0101 1001 1101 0101 0100 = Flow Label: 0x59d54
+    Payload Length: 92
+    Next Header: TCP (6)
+    Hop Limit: 64
+    Source Address: 2a01:cb08:ab9:7f00:89b0:9b61:dd7d:9357
+    Destination Address: 2a00:1450:4007:818::200e
+Transmission Control Protocol, Src Port: 48982, Dst Port: 80, Seq: 163, Ack: 1, Len: 60
+    Source Port: 48982
+    Destination Port: 80
+    [Stream index: 3]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 60]
+    Sequence Number: 163    (relative sequence number)
+    Sequence Number (raw): 3894125038
+    [Next Sequence Number: 223    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 3925793528
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 507
+    [Calculated window size: 64896]
+    [Window size scaling factor: 128]
+    Checksum: 0xbb8a [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - No-Operation (NOP)
+            Kind: No-Operation (1)
+        TCP Option - Timestamps
+            Kind: Time Stamp Option (8)
+            Length: 10
+            Timestamp value: 3843423015: TSval 3843423015, TSecr 2755029609
+            Timestamp echo reply: 2755029609
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.013328727 seconds]
+        [Time since previous frame in this TCP stream: 0.000431177 seconds]
+    [SEQ/ACK analysis]
+        [iRTT: 0.012732710 seconds]
+        [Bytes in flight: 222]
+        [Bytes sent since last PSH flag: 60]
+    TCP payload (60 bytes)
+    TCP segment data (60 bytes)
+[2 Reassembled TCP Segments (222 bytes): #26(162), #27(60)]
+    [Frame: 26, payload: 0-161 (162 bytes)]
+    [Frame: 27, payload: 162-221 (60 bytes)]
+    [Segment count: 2]
+    [Reassembled TCP length: 222]
+    [Reassembled TCP Data: 504f5354202f20485454502f312e310d0a486f73743a20676f6f676c652e636f6d0d0a55…]
+Hypertext Transfer Protocol
+    POST / HTTP/1.1\r\n
+        [Expert Info (Chat/Sequence): POST / HTTP/1.1\r\n]
+            [POST / HTTP/1.1\r\n]
+            [Severity level: Chat]
+            [Group: Sequence]
+        Request Method: POST
+        Request URI: /
+        Request Version: HTTP/1.1
+    Host: google.com\r\n
+    User-Agent: python-requests/2.31.0\r\n
+    Accept-Encoding: gzip, deflate\r\n
+    Accept: */*\r\n
+    Connection: keep-alive\r\n
+    Content-Length: 60\r\n
+        [Content length: 60]
+    \r\n
+    [Full request URI: http://google.com/]
+    [HTTP request 1/1]
+    [Response in frame: 31]
+    File Data: 60 bytes
+    Data (60 bytes)
+        Data: 561235589542388811314328709475845995050944680707512689149701
+        [Length: 60]
